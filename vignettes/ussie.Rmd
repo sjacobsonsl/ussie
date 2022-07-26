@@ -28,5 +28,11 @@ glimpse(matches_italy)
 package by making standard tibbles for each country
 
 
+## Get country data 
 
+The function `uss_get_matches()` can get the data for a country:
+
+```{r uss_get_matches}
+italy_matches <- uss_get_matches("italy")
+```
 
