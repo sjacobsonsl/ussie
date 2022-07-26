@@ -33,6 +33,13 @@ package by making standard tibbles for each country
 The function `uss_get_matches()` can get the data for a country:
 
 ```{r uss_get_matches}
-italy_matches <- uss_get_matches("italy")
+italy_matches <- uss_get_matches("italy") |>
+  glimpse()
 ```
 
+We can add filtering conditionsL
+
+```{r uss_get_matches_filter}
+uss_get_matches("england", season == 1966) |>
+  glimpse()
+```
